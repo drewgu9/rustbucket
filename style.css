@@ -1,0 +1,60 @@
+:root {
+  --bg: #15120e;
+  --fg: #d8c8a8;
+  --dim: #85775f;
+  --accent: #e08a3c;
+  --good: #8fbf6a;
+  --bad: #d9604c;
+  --cold: #6fb3c8;
+  --btn: #2e271d;
+  --btn-hover: #4a3d2a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--fg);
+  font: 15px/1.25 ui-monospace, Menlo, Consolas, monospace;
+}
+
+pre {
+  margin: 0;
+  font: inherit;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+#status { min-height: 1.25em; margin-bottom: 14px; }
+
+/* Classes written by Grid.toHTML() */
+.btn {
+  background: var(--btn);
+  color: var(--accent);
+  cursor: pointer;
+  user-select: none;
+}
+.btn:hover { background: var(--btn-hover); }
+.btn.off { color: var(--dim); cursor: default; }
+.btn.off:hover { background: var(--btn); }
+.btn.on { background: var(--accent); color: var(--bg); }
+.hot { cursor: pointer; color: var(--accent); }
+.hot:hover { color: var(--bg); background: var(--accent); }
+.dim { color: var(--dim); }
+.good { color: var(--good); }
+.bad { color: var(--bad); }
+.cold { color: var(--cold); }
+.hi { color: var(--accent); }
+
+#riddleBox, #saveBox { margin-top: 14px; }
+
+input, textarea {
+  background: var(--btn);
+  color: var(--fg);
+  border: 1px solid var(--dim);
+  font: inherit;
+  padding: 2px 4px;
+  max-width: 100%;
+}
